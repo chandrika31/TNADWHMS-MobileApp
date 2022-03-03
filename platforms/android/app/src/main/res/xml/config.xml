@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Permissions">
+        <param name="android-package" value="com.android.plugins.Permissions" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="RequestLocationAccuracy">
+        <param name="android-package" value="cordova.plugin.RequestLocationAccuracy" />
+    </feature>
+    <feature name="Diagnostic">
+        <param name="android-package" value="cordova.plugins.Diagnostic" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Diagnostic_Location">
+        <param name="android-package" value="cordova.plugins.Diagnostic_Location" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Diagnostic_Bluetooth">
+        <param name="android-package" value="cordova.plugins.Diagnostic_Bluetooth" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Diagnostic_Wifi">
+        <param name="android-package" value="cordova.plugins.Diagnostic_Wifi" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Diagnostic_Camera">
+        <param name="android-package" value="cordova.plugins.Diagnostic_Camera" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Diagnostic_Notifications">
+        <param name="android-package" value="cordova.plugins.Diagnostic_Notifications" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Diagnostic_NFC">
+        <param name="android-package" value="cordova.plugins.Diagnostic_NFC" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Diagnostic_External_Storage">
+        <param name="android-package" value="cordova.plugins.Diagnostic_External_Storage" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>TN ADW Hostel Management System</name>
+    <description>
+       TN ADW Hostel Management System
+    </description>
+    <author email="dulasimca@gmail.com" href="http://TryMeTech.com">
+       TryMe Tech Development Team
+    </author>
+    <icon density="mdpi" height="57" platform="android" src="src/assets/layout/images/TN_Govt_Logo.png" width="57" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <config-file after="uses-permission" parent="/manifest" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-feature android:name="android.hardware.location.gps" android:required="true" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.RECORD_VIDEO" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.BLUETOOTH" />
+    </config-file>
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
+</widget>
